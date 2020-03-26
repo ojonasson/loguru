@@ -8,10 +8,13 @@ I (Oli) made the following changes
 
 Build instructions:
 
-from the projects root directory:
+from the projects root directory ($LOGURU_DIR):
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=.. -DCMAKE_BUILD_TYPE=Release && make install
+
+This will install libloguru.a in $LOGURU_DIR/lib and a simple example (sst_example/sst_example.cpp) in $LOGURU_DIR/bin
+I recommend taking a quick look at sst_example/sst_example.cpp to see example usage.
 
 Below I have appended the readme from the forked repo:
 
