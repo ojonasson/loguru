@@ -1,6 +1,21 @@
-# Loguru: a lightweight and flexible C++ logging library.
+This is a fork of Loguru: a lightweight and flexible C++ logging library.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/hret4rx3xakjs7j4?svg=true)](https://ci.appveyor.com/project/emilk/loguru)
+I (Oli) made the following changes
+
+(1) Added CMake build option
+(2) Added DEBUG logging verbosity (lowest was INFO)
+(3) Added loguru_setup.h, which simplifies the log setup.
+
+Build instructions:
+
+from the projects root directory:
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=.. -DCMAKE_BUILD_TYPE=Release && make install
+
+Below I have appended the readme from the forked repo:
+
+# Loguru: a lightweight and flexible C++ logging library.
 
 ## At a glance
 
