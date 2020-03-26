@@ -116,7 +116,7 @@ Website: www.ilikebigbits.com
 
 #ifndef LOGURU_FILENAME_WIDTH
 	// Width of the column containing the file name
-	#define LOGURU_FILENAME_WIDTH 23
+	#define LOGURU_FILENAME_WIDTH 22
 #endif
 
 #ifndef LOGURU_THREADNAME_WIDTH
@@ -144,7 +144,7 @@ Website: www.ilikebigbits.com
 #endif
 
 #ifndef LOGURU_WITH_STREAMS
-	#define LOGURU_WITH_STREAMS 0
+	#define LOGURU_WITH_STREAMS 1
 #endif
 
 #ifndef LOGURU_REPLACE_GLOG
@@ -322,6 +322,7 @@ namespace loguru
 		Verbosity_0       =  0,
 
 		// Verbosity levels 1-9 are generally not written to stderr, but are written to file.
+        Verbosity_DEBUG   = +1,
 		Verbosity_1       = +1,
 		Verbosity_2       = +2,
 		Verbosity_3       = +3,
@@ -357,7 +358,6 @@ namespace loguru
 	LOGURU_EXPORT extern Verbosity g_stderr_verbosity;
 	LOGURU_EXPORT extern bool      g_colorlogtostderr; // True by default.
 	LOGURU_EXPORT extern unsigned  g_flush_interval_ms; // 0 (unbuffered) by default.
-	LOGURU_EXPORT extern bool      g_preamble_header; // Prepend each log start by a descriptions line with all columns name? True by default.
 	LOGURU_EXPORT extern bool      g_preamble; // Prefix each log line with date, time etc? True by default.
 
 	/* Specify the verbosity used by loguru to log its info messages including the header
