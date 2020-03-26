@@ -2,21 +2,20 @@ This is a fork of Loguru: a lightweight and flexible C++ logging library.
 
 I (Oli) made the following changes
 
-(1) Added CMake build option
-(2) Added DEBUG logging verbosity (lowest was INFO)
-(3) Added loguru_setup.h, which simplifies the log setup.
+(1) Added CMake build option\
+(2) Added DEBUG logging verbosity (lowest was INFO)\
+(3) Added loguru_setup.h, which simplifies the log setup.\
 
 Build instructions:
 
-from the projects root directory ($LOGURU_DIR):
-mkdir build
-cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=.. -DCMAKE_BUILD_TYPE=Release && make install
+from the projects root directory ($LOGURU_DIR):\
+mkdir build\
+cd build\
+cmake .. -DCMAKE_INSTALL_PREFIX=.. -DCMAKE_BUILD_TYPE=Release && make install\
 
 This will install libloguru.a in $LOGURU_DIR/lib and a simple example (sst_example/sst_example.cpp) in $LOGURU_DIR/bin
-I recommend taking a quick look at sst_example/sst_example.cpp to see example usage.
-
-Below I have appended the readme from the forked repo:
+I recommend taking a quick look at sst_example/sst_example.cpp to see example usage. Below I have appended the readme
+from the forked repo:
 
 # Loguru: a lightweight and flexible C++ logging library.
 
