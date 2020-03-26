@@ -62,5 +62,6 @@ add_executable(sst_example
 
 target_link_libraries(sst_example loguru)
 target_link_libraries(sst_example pthread)
+target_link_libraries(sst_example dl)
 
 install(TARGETS sst_example DESTINATION bin)
